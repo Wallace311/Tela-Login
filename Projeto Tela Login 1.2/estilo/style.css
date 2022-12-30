@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/*Paleta de Cores
+    Roxo:         #A551F5
+    Azul-Roxo:    #653EDE
+    Azul-Marinho: #464BFA
+
+    Dentro da Section
+    Botões e Inputs: 
+    Rosa-Roxo: #BC3EDE
+    Verde-Limão: #6BE03C
+*/
+
+:root{
+    --cor1: #BC3EDE;
+    --cor2: #A551F5;
+    --cor3: #653EDE;
+    --cor4: #464BFA;
+    --cor5: #6BE03C;
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: var(--cor2);
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.45);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#fundo{
+    background: #653EDE url('../imagens/street.jpg') left bottom no-repeat;
+    background-size: cover;
+    height: 180px;
+    display: block;
+}
+
+section#login > div#formu{
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+section#login > div#formu > p{
+    width: 95%;
+    margin:10px auto;
+}
+
+div#formu > h1{
+    font-size: 1.8em;
+}
+
+div#cd > input{
+    margin: 10px;
+}
+
+div.campo{
+    background-color: var(--cor2);
+    padding: 5px 0px;
+    margin: 8px auto auto auto;
+    border-radius: 4px;
+}
+div.campo > span{
+    margin-right: 15px;
+    margin-bottom: 4px;
+}
+div.campo > input{
+    border-radius: 4px;
+    height: 24px;
+}
+
+.botao{
+    width: 70%;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 2px;
+}
+
+input#enviar{
+    background: linear-gradient(to right, var(--cor4), var(--cor2));
+    margin-top: 30px;
+    padding: 5px;
+    cursor: pointer;
+    border: #A551F5;
+    color: white;
+    font-weight: bold;
+    font-size: 1.05em;
+}
+input#enviar:hover{
+    background: linear-gradient(to right, var(--cor2), var(--cor4));
+    transition: 0.6s;
+    transition-timing-function: ease;
+}
+a#esq{
+    border: 2px solid var(--cor3);
+    text-decoration: none;
+    color: black;
+    font: normal 300 1em;
+    height: 15px;
+}
+a#esq:hover{
+    background: linear-gradient(to right, var(--cor2), var(--cor4));
+    color: white;
+}
+

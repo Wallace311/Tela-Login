@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="fundo">
+                
+            </div>
+            <div id="formu">
+                <h1>Login</h1>
+                <p>Seja Bem-vindo! Faça o login para ter acesso a plataforma.</p>
+
+                <form action="cadastro.php" method="POST" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                        person
+                        </span>
+                        <input type="email" name="user" id="iuser" autocomplete="email" required maxlength="30">
+                        <label for="iuser"></label>
+                    </div>
+                    <div class="campo">
+                        
+                        <span class="material-symbols-outlined">
+                        key
+                        </span>
+                        <input type="password" name="sen" id="isen" autocomplete="current-password" required minlength="6" max-length="15">
+                       <label for="isen"></label>
+                    </div>
+                    <p><input type="submit" value="Entrar" id="enviar" class="botao"></p>
+                    <a href="#" id="esq" class="botao">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
